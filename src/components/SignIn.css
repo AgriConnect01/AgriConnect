@@ -1,0 +1,237 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.signin-container *,
+.signin-container *::before,
+.signin-container *::after {
+  box-sizing: border-box;
+}
+
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 120px;
+}
+
+.signin-header {
+  background-color: rgba(107, 142, 35, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: .5rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.logo-img { width: 32px; height: 32px; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: .95rem;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: .25rem .35rem;
+  border-radius: 6px;
+}
+.nav-links a:hover { text-decoration: underline; }
+
+.signin-box {
+  width: 100%;
+  max-width: 520px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #2b2b2b;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+.input-group input {
+  display: block;
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  font-size: 1rem;
+}
+.input-group input:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 6px rgba(46, 125, 50, 0.4);
+}
+.input-group input::placeholder {
+  color: #666;
+}
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #333;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.forgot-password a,
+.forgot-password button {
+  font-size: .9rem;
+  color: #0a66ff;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.forgot-password a:hover,
+.forgot-password button:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #43a047, #2e7d32);
+  transition: transform .2s ease, filter .2s ease, background .2s ease;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #2e7d32, #1b5e20);
+  transform: translateY(-1px);
+  filter: brightness(1.02);
+}
+
+.or-divider {
+  margin: 1rem 0;
+  font-size: .95rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.google-btn {
+  background: #fff;
+  border-radius: 6px;
+  padding: 0.35rem;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  width: 38px;         
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s ease;
+}
+.google-btn img {
+  width: 20px;         
+  height: 20px;
+  object-fit: contain;
+}
+.google-btn:hover {
+  background: #f5f5f5;
+}
+
+.otp-btn {
+  padding: 0.35rem 0.8rem;  
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00796b, #004d40);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;    
+  transition: background .2s ease, transform .2s ease;
+}
+.otp-btn:hover {
+  background: linear-gradient(90deg, #004d40, #00251a);
+  transform: translateY(-1px);
+}
+
+.signup-link {
+  margin-top: 1rem;
+  font-size: .95rem;
+  color: #222;
+}
+.link-btn {
+  background: none;
+  border: none;
+  color: #0a66ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.link-btn:hover { color: #084fd2; }

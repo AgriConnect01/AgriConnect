@@ -1,0 +1,143 @@
+.join-container {
+  width: 100vw;           
+  height: 100vh;          
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+}
+
+.navbar {
+  background-color: #6da544;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.nav-links li:hover {
+  text-decoration: underline;
+}
+
+.join-header {
+  margin-top: 2rem;
+}
+
+.join-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.join-header p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.join-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; 
+}
+
+.card {
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1.5rem 1rem;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #6da544;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+
+.card.selected {
+  border-color: #6da544;
+  background-color: #f0f8eb;
+  box-shadow: 0 0 12px rgba(109, 165, 68, 0.4);
+  transform: scale(1.03);
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.join-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-outline {
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid #ccc;
+  background: white;
+  color: black;
+}
+
+.btn-outline:hover {
+  background-color: #6da544;
+  border-color: #6da544;
+  color: white;
+}
+
+.btn-outline.disabled {
+  background-color: #f2f2f2;
+  border-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
